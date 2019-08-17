@@ -82,7 +82,7 @@ nav .links .link:not(:last-child) {
   left: 50vw;
   height: 100%;
   width: 100%;
-  background-image: url(./assets/blob1.svg);
+  background-image: url(/assets/blob1.svg);
   background-repeat: no-repeat;
   background-position-x: 10%;
   background-position-y: 350%;
@@ -168,16 +168,16 @@ nav .links .link:not(:last-child) {
 }
 
 .sessionsNav ul #rebalanceLink {
-  background-image: url(./assets/sessions/rebalance-gray.svg);
+  background-image: url(/assets/sessions/rebalance-gray.svg);
   background-repeat: no-repeat;
 }
 
 .sessionsNav ul #rebalanceLink.active {
-  background-image: url(./assets/sessions/rebalance-color.svg);
+  background-image: url(/assets/sessions/rebalance-color.svg);
 }
 
 .sessionsNav ul #rebalanceLink.canHover:hover {
-  background-image: url(./assets/sessions/rebalance-color.svg);
+  background-image: url(/assets/sessions/rebalance-color.svg);
 }
 
 .sessionsNav ul #rebalanceLink.canHover:hover::after {
@@ -197,16 +197,16 @@ nav .links .link:not(:last-child) {
 }
 
 .sessionsNav ul #calmLink {
-  background-image: url(./assets/sessions/calm-gray.svg);
+  background-image: url(/assets/sessions/calm-gray.svg);
   background-repeat: no-repeat;
 }
 
 .sessionsNav ul #calmLink.active {
-  background-image: url(./assets/sessions/calm-color.svg);
+  background-image: url(/assets/sessions/calm-color.svg);
 }
 
 .sessionsNav ul #calmLink.canHover:hover {
-  background-image: url(./assets/sessions/calm-color.svg);
+  background-image: url(/assets/sessions/calm-color.svg);
 }
 
 .sessionsNav ul #calmLink.canHover:hover::after {
@@ -226,16 +226,16 @@ nav .links .link:not(:last-child) {
 }
 
 .sessionsNav ul #recoverLink {
-  background-image: url(./assets/sessions/recover-gray.svg);
+  background-image: url(/assets/sessions/recover-gray.svg);
   background-repeat: no-repeat;
 }
 
 .sessionsNav ul #recoverLink.active {
-  background-image: url(./assets/sessions/recover-color.svg);
+  background-image: url(/assets/sessions/recover-color.svg);
 }
 
 .sessionsNav ul #recoverLink.canHover:hover {
-  background-image: url(./assets/sessions/recover-color.svg);
+  background-image: url(/assets/sessions/recover-color.svg);
 }
 
 .sessionsNav ul #recoverLink.canHover:hover::after {
@@ -255,16 +255,16 @@ nav .links .link:not(:last-child) {
 }
 
 .sessionsNav ul #energyLink {
-  background-image: url(./assets/sessions/energy-gray.svg);
+  background-image: url(/assets/sessions/energy-gray.svg);
   background-repeat: no-repeat;
 }
 
 .sessionsNav ul #energyLink.active {
-  background-image: url(./assets/sessions/energy-color.svg);
+  background-image: url(/assets/sessions/energy-color.svg);
 }
 
 .sessionsNav ul #energyLink.canHover:hover {
-  background-image: url(./assets/sessions/energy-color.svg);
+  background-image: url(/assets/sessions/energy-color.svg);
 }
 
 .sessionsNav ul #energyLink.canHover:hover::after {
