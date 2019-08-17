@@ -1,0 +1,81 @@
+.bg-gray {
+  background-color: #ECF0F1;
+}
+
+.bg-green {
+  background-color: #2ecc71;
+}
+
+.bg-green-darken {
+  background-color: #27AE60;
+}
+
+.bg-blue {
+  background-color: #3498db;
+}
+
+.bg-blue-darken {
+  background-color: #2980B9;
+}
+
+.bg-orange {
+  background-color: #f39c12;
+}
+
+.bg-orange-darken {
+  background-color: #E67E22;
+}
+
+.bg-purple {
+  background-color: #9b59b6;
+}
+
+.bg-purple-darken {
+  background-color: #8E44AD;
+}
+
+.bg-red {
+  background-color: #C0392B;
+}
+
+.color-white {
+  color: #FFFFFF;
+}
+
+.color-gray {
+  color: #CECECE;
+}
+
+.color-green {
+  color: #039A43;
+}
+
+.color-green-accent {
+  color: #2ECC71;
+}
+
+.color-blue {
+  color: #008FE7;
+}
+
+.color-orange {
+  color: #E56B00;
+}
+
+.color-purple {
+  color: #7B00AF;
+}
+
+.color-yellow-accent {
+  color: #F1C40F;
+}
+
+.color-red-accent {
+  color: #E74C3C;
+}
+
+.shadow-4 {
+  -webkit-box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+/*# sourceMappingURL=global.css.map */
