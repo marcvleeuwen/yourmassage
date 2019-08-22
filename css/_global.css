@@ -1,0 +1,108 @@
+@import "_vars.css";
+
+/*backgrounds*/
+.bg-gray {
+    background-color: var(--bg-gray);
+}
+
+.bg-green {
+    background-color: var(--bg-green);
+}
+
+.bg-green-darken {
+    background-color: var(--bg-green-darken);
+}
+
+.bg-blue {
+    background-color: var(--bg-blue);
+}
+
+.bg-blue-darken {
+    background-color: var(--bg-blue-darken);
+}
+
+.bg-orange {
+    background-color: var(--bg-orange);
+}
+
+.bg-orange-darken {
+    background-color: var(--bg-orange-darken);
+}
+
+.bg-purple {
+    background-color: var(--bg-purple);
+}
+
+.bg-purple-darken {
+    background-color: var(--bg-purple-darken);
+}
+
+.bg-red {
+    background-color: var(--bg-red);
+}
+
+/*font colors*/
+.color-white {
+    color: var(--color-white);
+}
+
+.color-gray {
+    color: var(--color-gray);
+}
+
+.color-green {
+    color: var(--color-green);
+}
+
+.color-green-accent {
+    color: var(--color-green-accent);
+}
+
+.color-blue {
+    color: var(--color-blue);
+}
+
+.color-orange {
+    color: var(--color-orange);
+}
+
+.color-purple {
+    color: var(--color-purple);
+}
+
+.color-yellow-accent {
+    color: var(--color-yellow-accent);
+}
+
+.color-red-accent {
+    color: var(--color-red-accent);
+}
+
+/*elevation shadows*/
+.shadow-1 {
+    -webkit-box-shadow: var(--shadow-1);
+    box-shadow: var(--shadow-1);
+}
+
+/*gradients*/
+.text-gradient {
+    background: var(--rainbow-moz);
+    background: var(--rainbow-webkit);
+    background: var(--rainbow);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bg-gradient {
+    background: var(--rainbow-moz);
+    background: var(--rainbow-webkit);
+    background: var(--rainbow);
+}
+
+.border-gradient {
+    border-bottom: 2px solid;
+    border-image: var(--rainbow-moz);
+    border-image: var(--rainbow-webkit);
+    border-image: var(--rainbow);
+}

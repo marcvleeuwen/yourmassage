@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import "_vars.css";
+
+/*general setup*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*nav bar*/
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-transform: uppercase;
+}
+
+header nav {
+    margin: 0 50px;
+    height: 100px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .links {
+    flex: 1;
+}
+
+nav .brand {
+    flex: 4;
+}
+
+nav ul {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav a {
+    color: unset;
+    text-decoration: none;
+}
+
+nav .links a:hover,
+nav .links a:active,
+nav .links a:focus,
+nav .links a.active {
+    border-bottom: 2px solid;
+    border-bottom-color: var(--color-gray-darken);
+    color: var(--color-gray-darken);
+}
+
+nav .links a.link-sessions:hover,
+nav .links a.link-sessions:active,
+nav .links a.link-sessions:focus {
+    border-bottom: 2px solid;
+    border-image: var(--rainbow-moz); /* FF3.6-15 */
+    border-image: var(--rainbow-webkit); /* Chrome10-25,Safari5.1-6 */
+    border-image: var(--rainbow); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    border-image-slice: 1;
+
+    background: var(--rainbow-moz);
+    background: var(--rainbow-webkit);
+    background: var(--rainbow);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*sidebar*/
+aside#sidebar {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    left: 25px;
+    bottom: 0;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+aside#sidebar section {
+    margin: 3vh 0;
+    cursor: pointer;
+
+    height: 25px;
+    width: 100%;
+}
+
+/*set background image for each session*/
+aside#sidebar section#nav_rebalancing {
+    background-image: url("../assets/sessions/rebalance-gray.svg");
+    background-repeat: no-repeat;
+}
+
+aside#sidebar section#nav_calming {
+    background-image: url("../assets/sessions/calm-gray.svg");
+    background-repeat: no-repeat;
+}
+
+aside#sidebar section#nav_recover {
+    background-image: url("../assets/sessions/recover-gray.svg");
+    background-repeat: no-repeat;
+}
+
+aside#sidebar section#nav_energising {
+    background-image: url("../assets/sessions/energy-gray.svg");
+    background-repeat: no-repeat;
+}
+
+/*update background image for each session*/
+aside#sidebar section#nav_rebalancing:hover,
+aside#sidebar section#nav_rebalancing:active,
+aside#sidebar section#nav_rebalancing:focus,
+aside#sidebar section#nav_rebalancing.active  {
+    background-image: url("../assets/sessions/rebalance-color.svg");
+    background-repeat: no-repeat;
+}
+
+aside#sidebar section#nav_calming:hover,
+aside#sidebar section#nav_calming:active,
+aside#sidebar section#nav_calming:focus,
+aside#sidebar section#nav_calming.active  {
+    background-image: url("../assets/sessions/calm-color.svg");
+    background-repeat: no-repeat;
+}
+
+aside#sidebar section#nav_recover:hover,
+aside#sidebar section#nav_recover:active,
+aside#sidebar section#nav_recover:focus,
+aside#sidebar section#nav_recover.active  {
+    background-image: url("../assets/sessions/recover-color.svg");
+    background-repeat: no-repeat;
+}
+
+aside#sidebar section#nav_energising:hover,
+aside#sidebar section#nav_energising:active,
+aside#sidebar section#nav_energising:focus,
+aside#sidebar section#nav_energising.active {
+    background-image: url("../assets/sessions/energy-color.svg");
+    background-repeat: no-repeat;
+}
+
+/*global main section setup*/
+main section {
+    height: 100vh;
+}
+
+/*landing page setup*/
+main section.landing {
+    display: grid;
+    grid-template-columns: 50px 50px auto auto auto auto 50px 50px;
+    grid-template-rows: 50px 50px auto auto auto auto 50px 50px;
+    background-color: var(--bg-gray);
+}
+
+section.landing .blob {
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 7;
+    justify-self: end;
+}
+
+section.landing .content {
+    /*place container*/
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    justify-self: end;
+
+    margin-top: 200px;
+    max-width: 25vw;
+
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 200px 50% auto 200px;
+}
+
+section.landing .content .writing {
+    /*place container*/
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: end;
+
+    max-width: 25vw;
+}
+
+.writing p {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+section.landing .content .cta {
+    /*place container*/
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: end;
+    align-self: end;
+}
+
+.cta button {
+    color: white;
+    width: 15vw;
+    height: 3vw;
+    border: none;
+    max-width: 25vw;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+
+.content .cta button {
+    width: 25vw;
+    border: 3px solid;
+    border-image: var(--rainbow-moz); /* FF3.6-15 */
+    border-image: var(--rainbow-webkit); /* Chrome10-25,Safari5.1-6 */
+    border-image: var(--rainbow); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    border-image-slice: 1;
+
+    background: var(--rainbow-moz);
+    background: var(--rainbow-webkit);
+    background: var(--rainbow);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content .cta button:hover,
+.content .cta button:active,
+.content .cta button:focus {
+    -webkit-box-shadow: var(--shadow-1);
+    box-shadow: var(--shadow-1);
+}
+
+/*Page 1 setup*/
+main section.session-page {
+    display: grid;
+    grid-template-columns: 50px 50px auto auto auto auto 50px 50px;
+    grid-template-rows: 50px 50px auto auto auto auto 50px 50px;
+}
+
+section.session-page .heroImg {
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 6;
+    grid-row-end: 8;
+    align-self: end;
+    justify-self: end;
+}
+
+.inner {
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 7;
+    padding: 50px;
+}
+
+section.session-page .inner {
+    color: white;
+
+    display: grid;
+    grid-template-columns: 33% 33% auto;
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+}
+
+section.session-page .inner .title {
+    font-size: 2rem;
+    font-weight: lighter;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+section.session-page .inner .writing {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+section.session-page .inner .writing p {
+    font-size: 1rem;
+}
+
+section.session-page .inner .price {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 10;
+
+    display: grid;
+    grid-template-columns: 50px auto;
+    grid-template-rows: 30% auto 33%;
+}
+
+section.session-page .inner .price p {
+    font-size: 4rem;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: start;
+    align-self: center;
+}
+
+section.session-page .inner .cta {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 10;
+    grid-row-end: 11;
+}
+
+section.session-page .inner .cta button.cta-red {
+    border: 2px solid var(--color-red-accent);
+    background: transparent;
+    color: var(--color-red-accent);
+}
+
+section.session-page .inner .cta button.cta-red:hover,
+section.session-page .inner .cta button.cta-red:active,
+section.session-page .inner .cta button.cta-red:focus {
+    background-color: var(--color-red-accent);
+    color: var(--color-white);
+}
+
+section.session-page .inner .cta button.cta-yellow {
+    border: 2px solid var(--color-yellow-accent);
+    background: transparent;
+    color: var(--color-yellow-accent);
+}
+
+section.session-page .inner .cta button.cta-yellow:hover,
+section.session-page .inner .cta button.cta-yellow:active,
+section.session-page .inner .cta button.cta-yellow:focus {
+    background-color: var(--color-yellow-accent);
+    color: var(--color-gray-darken);
+}
+
+section.session-page .inner .cta button.cta-green {
+    border: 2px solid var(--color-green-accent);
+    background: transparent;
+    color: var(--color-green-accent);
+}
+
+section.session-page .inner .cta button.cta-green:hover,
+section.session-page .inner .cta button.cta-green:active,
+section.session-page .inner .cta button.cta-green:focus {
+    background-color: var(--color-green-accent);
+    color: var(--color-gray-darken);
+}

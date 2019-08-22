@@ -1,0 +1,35 @@
+:root {
+    /*text colors*/
+    --color-white: #FFFFFF;
+    --color-gray: #CECECE;
+    --color-gray-darken: #505050;
+    --color-green: #039A43;
+    --color-purple: #7B00AF;
+    --color-blue: #008FE7;
+    --color-orange: #E56B00;
+    --color-yellow-accent: #F1C40F;
+    --color-red-accent: #E74C3C;
+    --color-green-accent: #2ECC71;
+
+    /*section background color*/
+    --bg-gray: #ECF0F1;
+    --bg-green: #2ecc71;
+    --bg-blue: #3498db;
+    --bg-purple: #9b59b6;
+    --bg-orange: #f39c12;
+    --bg-red: #C0392B;
+
+    /*.inner background color */
+    --bg-green-darken: #27AE60;
+    --bg-blue-darken: #2980B9;
+    --bg-purple-darken: #8E44AD;
+    --bg-orange-darken: #E67E22;
+
+    /*gradients*/
+    --rainbow-moz: -moz-linear-gradient(left, var(--bg-blue) 0%, var(--bg-orange) 33%, var(--bg-purple) 66%, var(--bg-green) 100%); /* FF3.6-15 */
+    --rainbow-webkit: -webkit-linear-gradient(left, var(--bg-blue) 0%, var(--bg-orange) 33%, var(--bg-purple) 66%, var(--bg-green) 100%); /* Chrome10-25,Safari5.1-6 */
+    --rainbow: linear-gradient(to right, var(--bg-blue) 0%, var(--bg-orange) 33%, var(--bg-purple) 66%, var(--bg-green) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+    /*shadow*/
+    --shadow-1: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
