@@ -1,122 +1,129 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Your Massage</title>
+    <title>Brand name - extra details</title>
 
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/sessions.css">
-    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/_global.css">
+    <script rel="script" src="site.js"></script>
 </head>
-
-<body class="bg-gray">
-    <section class="posLock" style="width: 100%;">
-        <nav>
-            <div class="title">your massage</div>
-            <div class="links">
-                <div class="link"><a href="#sessions">sessions</a></div>
-                <div class="link"><a href="#about">about</a></div>
-                <div class="link"><a href="#contact">contact</a></div>
-            </div>
-        </nav>
-    </section>
-    <section class="posLock">
-        <div class="sessionsNav">
+<body>
+<header>
+    <nav>
+        <div class="brand">
+            <a href="#homePage">Your massage</a>
+        </div>
+        <div class="links">
             <ul>
-                <li id="rebalanceLink" class="canHover" data-descr="Rebalance"><a href="#rebalance"></a></li>
-                <li id="calmLink" class="canHover" data-descr="Calming"><a href="#calming"></a></li>
-                <li id="recoverLink" class="canHover" data-descr="Recovery"><a href="#recovery"></a></li>
-                <li id="energyLink" class="canHover" data-descr="Energising"><a href="#energising"></a></li>
+                <li><a href="#rebalance" class="link-sessions">Sessions</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-    </section>
-    <div id="landingPage">
-        <div class="blob"></div>
-        <div class="landing">
-            <div class="wording">
-                <p>Life can be tough.<br>
-                    Take a load off and reconnect with yourself.</p>
+    </nav>
+</header>
+<aside id="sidebar">
+    <section id="nav_rebalancing" section_link="rebalance" onclick="scrollToId(this, 'rebalance')"></section>
+    <section id="nav_calming" section_link="calm" onclick="scrollToId(this, 'calm')"></section>
+    <section id="nav_recover" section_link="recover" onclick="scrollToId(this, 'recover')"></section>
+    <section id="nav_energising" section_link="energy" onclick="scrollToId(this, 'energy')"></section>
+</aside>
+<main>
+    <section id="homePage" class="landing">
+        <img src="assets/blob2.svg" alt="background blob" class="blob">
+        <div class="content">
+            <div class="writing">
+                <p>Life can be tough.<br>Take a load off and reconnect with yourself.</p>
                 <p>There is a session for every situation.</p>
             </div>
-            <div class="cta"><a href="#booknow">Book now</a></div>
-        </div>
-    </div>
-
-    <div id="rebalancing" class="bg-green">
-        <img class="icon" src="/assets/sessions/rebalance.svg" alt="">
-        <div class="banner bg-red color-white shadow-4">Most popular</div>
-        <div class="inner bg-green-darken shadow-4">
-            <div class="content">
-                <span class="title">Rebalance</span>
-                <div class="decription">
-                    <p>Official scientific rebalancing massage technique know as Rebalancing,<br>a unique body mind
-                        treatment system.</p>
-                    <p>With roots in Rolfing postural integration and liquid bodywork, the body mind are transported
-                        on a facinating transformation that elevates the patterns of <strong>thought</strong>,
-                        <strong>feeling</strong> and <strong>energy flow</strong>.</p>
-                </div>
-                <div class="price color-white" id="rebalancePrice">
-                    <img src="/assets/r/R-green.svg" alt="">
-                    <span class="amount">500 p/h</span>
-                </div>
-                <div class="btn-red color-red-accent">Book now</div>
+            <div class="cta">
+                <button class="cta border-gradient">Book now</button>
             </div>
         </div>
-    </div>
-    <div id="calming" class="bg-blue">
-        <img class="icon" src="/assets/sessions/calm.svg" alt="">
-        <div class="inner bg-blue-darken shadow-4">
-            <div class="content">
-                <span class="title">Calming</span>
-                <div class="decription">
-                    <p>A soft, slow, comforting technique that is guarenteed to have you feeling relaxed and ready to tackle the every day stresses of life.</p>
-                </div>
-                <div class="price color-white" id="rebalancePrice">
-                    <img src="/assets/r/R-blue.svg" alt="">
-                    <span class="amount">450 p/h</span>
-                </div>
-                <div class="btn-yellow color-yellow-accent">Book now</div>
+    </section>
+    <section id="rebalance" class="session-page bg-green">
+        <div class="inner bg-green-darken shadow-1">
+            <h1 class="title">Rebalance</h1>
+            <div class="writing">
+                <p>Official scientific massage technique know as Rebalancing, a unique psychosomatic body mind treatment
+                    system.</p>
+                <p>With roots in Rolfing postural integration and liquid bodywork, the body mind are transported on a
+                    fascinating transformation that elevates the patterns of thought, feeling and energy flow.</p>
+            </div>
+            <div class="price">
+                <img src="assets/r/green.svg" alt="price image">
+                <p>500 p/h</p>
+            </div>
+            <div class="cta">
+                <button class="cta cta-red">Book now</button>
             </div>
         </div>
-    </div>
-    <div id="recover" class="bg-purple">
-        <img class="icon" src="/assets/sessions/recover.svg" alt="">
-        <div class="inner bg-purple-darken shadow-4">
-            <div class="content">
-                <span class="title">Recover</span>
-                <div class="decription">
-                    <p>This deep tissue neck and back massage targets areas of tension, providing healing stroke to releave and postpone the onset of tension in the body.</p>
-                </div>
-                <div class="price color-white" id="rebalancePrice">
-                    <img src="/assets/r/R-purple.svg" alt="">
-                    <span class="amount">450 p/h</span>
-                </div>
-                <div class="btn-yellow color-yellow-accent">Book now</div>
+        <div class="heroImg">
+            <img src="assets/sessions/rebalance.svg" alt="Rebalance hero image">
+        </div>
+    </section>
+    <section id="calm" class="session-page bg-blue">
+        <div class="inner bg-blue-darken shadow-1">
+            <h1 class="title">Calming</h1>
+            <div class="writing">
+                <p>A soft, slow, comforting technique that is guaranteed to have you feeling relaxed<br> and ready to
+                    tackle the every day stresses of life.</p>
+            </div>
+            <div class="price">
+                <img src="assets/r/blue.svg" alt="price image">
+                <p>450 p/h</p>
+            </div>
+            <div class="cta">
+                <button class="cta cta-yellow">Book now</button>
             </div>
         </div>
-    </div>
-    <div id="energising" class="bg-orange">
-        <img class="icon" src="/assets/sessions/energy.svg" alt="">
-        <div class="inner bg-orange-darken shadow-4">
-            <div class="content">
-                <span class="title">Energising</span>
-                <div class="decription">
-                    <p>This deep and energising back massage will allow you to regain your lost energy.</p>
-                    <p>Give your body and mind the recharge is deserves and charge head-first into the future.</p>
-                </div>
-                <div class="price color-white" id="rebalancePrice">
-                    <img src="/assets/r/R-orange.svg" alt="">
-                    <span class="amount">450 p/h</span>
-                </div>
-                <div class="btn-green color-green-accent">Book now</div>
+        <div class="heroImg">
+            <img src="assets/sessions/calm.svg" alt="Calming hero image">
+        </div>
+    </section>
+    <section id="recover" class="session-page bg-purple">
+        <div class="inner bg-purple-darken shadow-1">
+            <h1 class="title">Recovery</h1>
+            <div class="writing">
+                <p>This deep tissue neck and back massage targets areas of tension,<br>providing healing stroke to
+                    relieve and postpone the onset of tension in the body.</p>
+            </div>
+            <div class="price">
+                <img src="assets/r/purple.svg" alt="price image">
+                <p>450 p/h</p>
+            </div>
+            <div class="cta">
+                <button class="cta cta-yellow">Book now</button>
             </div>
         </div>
-    </div>
-
-
+        <div class="heroImg">
+            <img src="assets/sessions/recover.svg" alt="Recover hero image">
+        </div>
+    </section>
+    <section id="energy" class="session-page bg-orange">
+        <div class="inner bg-orange-darken shadow-1">
+            <h1 class="title">Energising</h1>
+            <div class="writing">
+                <p>This deep and energising back massage will allow you to regain your lost energy.</p>
+                <p>Give your body and mind the recharge is deserves and charge head-first into the future.</p>
+            </div>
+            <div class="price">
+                <img src="assets/r/orange.svg" alt="price image">
+                <p>450 p/h</p>
+            </div>
+            <div class="cta">
+                <button class="cta cta-green">Book now</button>
+            </div>
+        </div>
+        <div class="heroImg">
+            <img src="assets/sessions/energy.svg" alt="Energising hero image">
+        </div>
+    </section>
+</main>
+<footer></footer>
 </body>
-
 </html>
